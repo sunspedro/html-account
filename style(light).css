@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+HU:wght@100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    height: 60vh;
+}
+.mid-subtitle{
+    font-size: 13px;
+}
+.mid-input-custom {
+    background: transparent;
+    color: #000;
+    border: 0.8px solid #E0E0E0;
+    outline: none;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+input::placeholder {
+    color: #828282;
+    font-size: 18px;
+}
+.mid-button-email {
+    background: #000;
+    color: #E0E0E0;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+.mid-button-email:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+
+}
+.mid-p-or {
+    color: #828282;
+    padding: 10px;
+}
+.mid-button-google {
+    display: flex;
+    justify-content: center;
+    background: #EEEEEE;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+.mid-button-google:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
