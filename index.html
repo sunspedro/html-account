@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
+    <script>
+        function googleclick(){
+            alert("Indisponível no momento");
+        }
+        function botaoclick(){
+            let email = document.getElementById("email").value;
+            if (email.trim()===""){
+                alert("Por favor, digite seu email!");
+            }
+            else {
+                alert("Login realizado com sucesso!")
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="top">
@@ -14,15 +28,15 @@
         <h2 class="mid-title">Crie sua conta</h2>
         <p class="mid-subtitle">Digite seu email para começar a criar seu cadastro</p>
         <form class="mid-input">
-            <input class="mid-input-custom" type="text" placeholder="email@dominio.com">
+            <input class="mid-input-custom" type="text" id="email" placeholder="email@dominio.com">
         </form>
-        <button class="mid-button-email">Entrar com email</button>
+        <button class="mid-button-email" onclick="botaoclick()">Entrar com email</button>
         <p class="mid-p-or">ou faça login com</p>
-        <button class="mid-button-google">
+        <button onclick="googleclick()" class="mid-button-google">
             <img src="Google.png" alt="Ícone" width="20" height="20">
             Google
         </button>
-        <p class="mid-p">Ao criar a conta você esta concordando com os <br><strong>Termos de serviço</strong> e com a <strong>Politica de privacidade</strong></p>
+        <p class="mid-p">Ao criar a conta você esta concordando com os <br><strong><a href="https://www.jusbrasil.com.br/modelos-pecas/modelo-termos-e-condicoes-para-site-ou-app/784909844" target="_blank">Termos de serviço</a></strong> e com a <strong><a href="https://www.jusbrasil.com.br/modelos-pecas/modelo-politica-de-privacidade/784935103" target="_blank">Politica de privacidade</a></strong></p>
     </main>
 </body>
 </html>
